@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{21E1FE34-1E36-4A85-869C-3BF0DF9B865F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Atividades_de_Revisão</RootNamespace>
+    <AssemblyName>Atividades de Revisão</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmCalculadora.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCalculadora.Designer.cs">
+      <DependentUpon>FrmCalculadora.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLetraA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLetraA.Designer.cs">
+      <DependentUpon>FrmLetraA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLetraB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLetraB.Designer.cs">
+      <DependentUpon>FrmLetraB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLetraC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLetraC.Designer.cs">
+      <DependentUpon>FrmLetraC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLetraD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLetraD.Designer.cs">
+      <DependentUpon>FrmLetraD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLetraE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLetraE.Designer.cs">
+      <DependentUpon>FrmLetraE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLetraF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLetraF.Designer.cs">
+      <DependentUpon>FrmLetraF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLetraG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLetraG.Designer.cs">
+      <DependentUpon>FrmLetraG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmCalculadora.resx">
+      <DependentUpon>FrmCalculadora.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLetraA.resx">
+      <DependentUpon>FrmLetraA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLetraB.resx">
+      <DependentUpon>FrmLetraB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLetraC.resx">
+      <DependentUpon>FrmLetraC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLetraD.resx">
+      <DependentUpon>FrmLetraD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLetraE.resx">
+      <DependentUpon>FrmLetraE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLetraF.resx">
+      <DependentUpon>FrmLetraF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLetraG.resx">
+      <DependentUpon>FrmLetraG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TikTok.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
